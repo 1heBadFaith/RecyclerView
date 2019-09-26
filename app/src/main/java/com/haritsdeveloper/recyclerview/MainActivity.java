@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+//Add in pada Komponent
     private MovieAdapter movieAdapter;
     RecyclerView rvMain;
     Toolbar toolbar;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_1);
 
-
+        //Cari id komponent saya!! 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         arrayList = new ArrayList<>();
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
             count++;
         }
     }
-
+    
+    //Method Search
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_bar,menu);
